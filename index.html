@@ -9,11 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Sans:ital,wght@1,400;1,600&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10" id="home">
       <div class="container">
         <div class="flex items-center justify-between relative">
           <div class="px-8 md:px-14">
-            <a href="#home" class="text-red-600 font-bold block py-6">YASAKA GATSU</a>
+            <a href="www.yasakagatsu.store" class="text-red-600 font-bold block py-6" id="home">YASAKA GATSU</a>
           </div>
           <div class="flex items-center px-8">
             <button id="hamburger" class="block abslute right-4 lg:hidden">
@@ -24,7 +24,7 @@
             <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg: lg:static lg:max-w-full lg:bg-transparent lg:shadow-none lg:rounded-none">
               <ul class="block lg:flex">
                 <li class="group">
-                  <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-amber-300">Beranda</a>
+                  <a href="yasakagatsu.store" class="text-base text-dark py-2 mx-8 flex group-hover:text-amber-300">Beranda</a>
                 </li>
                 <li class="group">
                   <a href="#menu" class="text-base text-dark py-2 mx-8 flex group-hover:text-amber-300">Menu</a>
@@ -33,7 +33,9 @@
                   <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-amber-300">Tentang Kami</a>
                 </li>
                 <li class="group">
-                  <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-amber-300">Kontak</a>
+                  <a href="https://wa.me/6289633883720?text=akumaupesanayamnyamin" class="text-base text-dark py-2 mx-8 flex group-hover:text-amber-300 lg:bg-red-600 lg:px-5 lg:rounded-full lg:font-bold lg:text-white" target="_blank"
+                    >Pesan Sekarang</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -50,8 +52,10 @@
           <h2 class="text-amber-500 text-3xl font-semibold mb-4">Fried Chicken</h2>
           <p class="font-thin font-caveat lg:text-lg text-slate-700">Ayam Goreng Crispy dengan rasa memukau dan harga terjangkau, cobain deh... <span class="font-bold"> Gurih kriuknya, Lezat Dagingnya, Mantap Sambalnya.</span></p>
           <p class="font-semibold text-sm text-slate-700 mb-6 mt-2"><span class="font-caveat relative -top-3 mr-1"> Mulai dari </span><span class="text-3xl font-bold"> Rp.8</span><span class="text-amber-500 font-bold">.000,-</span></p>
-          <button class="bg-transparent py-2 px-5 font-bold rounded-full text-red-600 border-2 border-red-500 hover:text-white hover:bg-red-500">Pesan Sekarang</button>
-          <button class="bg-transparent py-2 px-5 font-bold rounded-full text-red-600 border-2 ml-3 border-red-500 hover:text-white hover:bg-red-500">Lihat Menu</button>
+          <a href="wa.me/089633883720" class="bg-transparent py-2 px-5 font-bold rounded-full text-red-600 border-2 border-red-500 hover:text-white hover:bg-red-500">Pesan Sekarang</a>
+          <a href="https://drive.google.com/file/d/1UNIWevuN5Q1nge0u_VcuLipSbLJCBOIL/view?usp=drive_link" class="bg-transparent py-2 px-5 font-bold rounded-full text-red-600 border-2 ml-3 border-red-500 hover:text-white hover:bg-red-500"
+            >Lihat Menu</a
+          >
         </div>
       </div>
     </div>
@@ -110,15 +114,17 @@
     <!-- review customer -->
 
     <!-- menus -->
-    <section class="lg:mt-5 bg-amber-500 lg:p-10">
-      <h1 class="text-center text-white text-2xl font-bold py-5 pb-10">Menu Kami</h1>
-      <div class="mx-auto max-w-[80%]">
-        <div class="flex justify-evenly flex-wrap gap-10 pb-10">
-          <img src="src/img/AYAM_CRISPY.png" alt="" />
-          <img src="src/img/GEPREK_HEMAT.png" alt="" />
-          <img src="src/img/INDOMIE_GEPREK.png" alt="" />
-          <img src="src/img/PAKET EXPRESS.png" alt="" />
-          <img src="src/img/KENTANG_GORENG.png" alt="" />
+    <section class="lg:mt-14 bg-amber-500 lg:p-10" id="menu">
+      <div class="mt-7">
+        <h1 class="text-center text-white text-2xl font-bold py-5 pb-10 pt-5">Menu Kami</h1>
+        <div class="mx-auto max-w-[80%]">
+          <div class="flex justify-evenly flex-wrap gap-10 pb-10">
+            <img src="src/img/AYAM_CRISPY.png" alt="" />
+            <img src="src/img/GEPREK_HEMAT.png" alt="" />
+            <img src="src/img/INDOMIE_GEPREK.png" alt="" />
+            <img src="src/img/PAKET EXPRESS.png" alt="" />
+            <img src="src/img/KENTANG_GORENG.png" alt="" />
+          </div>
         </div>
       </div>
     </section>
@@ -126,7 +132,7 @@
 
     <!-- footer -->
     <section class="bg-red-600">
-      <h1 class="text-center text-white text-2xl font-bold py-5 pb-10">Tentang Kami</h1>
+      <h1 class="text-center text-white text-2xl font-bold py-5 pb-10" id="about">Tentang Kami</h1>
       <div class="mx-auto max-w-[90%]">
         <div class="flex justify-evenly flex-wrap gap-10 pb-10">
           <div class="w-80 h-80 bg-slate-100 mt-14 rounded-md shadow-2xl">
@@ -139,16 +145,22 @@
               <p class="text-sm text-slate-600 my-4 mb-3">Kami tersedia juga di :</p>
               <div class="flex mt-10 justify-evenly">
                 <div class="text-center">
-                  <img src="src/img/gofood.png" alt="" class="w-10 h-10 rounded-full ml-[5px]" />
-                  <h1>Gofood</h1>
+                  <a href="https://gofood.co.id/metro/restaurant/bfc-yosodadi-yasaka-gatsu-metro-timur-yosodadi-eb235675-168b-40f4-aaf6-53af28de9bbc">
+                    <img src="src/img/gofood.png" alt="" class="w-10 h-10 rounded-full ml-[5px]" />
+                    <h1>Gofood</h1>
+                  </a>
                 </div>
                 <div class="text-center">
-                  <img src="src/img/grabfood.png" alt="" class="w-10 h-10 rounded-full ml-3" />
-                  <h1>Grabfood</h1>
+                  <a href="https://food.grab.com/id/id/restaurant/bfc-yosodadi-yasaka-gatsu-yosodadi-delivery/6-C3WXLP5CLYETJA">
+                    <img src="src/img/grabfood.png" alt="" class="w-10 h-10 rounded-full ml-3" />
+                    <h1>Grabfood</h1>
+                  </a>
                 </div>
                 <div class="text-center">
-                  <img src="src/img/phone.svg" alt="" class="bg-green-600 p-1 w-10 h-10 rounded-full ml-3" />
-                  <h1>Whatsapp</h1>
+                  <a href="wa.me/089633883720">
+                    <img src="src/img/phone.svg" alt="" class="bg-green-600 p-1 w-10 h-10 rounded-full ml-3" />
+                    <h1>Whatsapp</h1>
+                  </a>
                 </div>
               </div>
             </div>
@@ -165,7 +177,7 @@
                 <img src="src/img/youtube.svg" alt="twitter" class="bg-red-600 w-14 h-14 p-2 rounded-full" />
                 <img src="src/img/instagram.svg" alt="twitter" class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-14 h-14 p-2 rounded-full" />
                 <img src="src/img/telegram.png" alt="twitter" class="bg-cyan-600 w-14 h-14 p-2 rounded-full" />
-                <img src="src/img/telegram.png" alt="twitter" class="bg-cyan-600 w-14 h-14 p-2 rounded-full" />
+                <img src="src/img/tiktok.png" alt="twitter" class="bg-transparent border-2 w-14 h-14 p-2 rounded-full" />
               </div>
             </div>
           </div>
